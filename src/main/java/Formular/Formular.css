@@ -1,0 +1,149 @@
+.header{
+    margin-top: 20px;
+    float: left;
+    height: 100px;
+    width: 900px;
+}
+.header-content{
+    padding: 10px 30px 10px 30px;
+    float: left;
+    width: 15%;
+}
+.header-text{
+    height: 40px;
+    width: 50%;
+    margin: 5px 0px 5px 0px;
+    text-align: center;
+    font-weight: bold;
+}
+.header-2{
+    float: left;
+    height: 150px;
+    width: 900px;
+}
+.header-2-content{
+    padding: 10px 30px 0px 30px;
+    float: left;
+    width: 15%;
+}
+.header-2-text{
+    height: 60px;
+    width: 14%;
+    margin: 0px 0px 0px 0px;
+    text-align: left;
+    font-weight: bold;
+}
+.header-2-text-2{
+    height: 50px;
+    width: 14%;
+    margin: 0px 0px 0px 0px;
+    text-align: left;
+    font-weight: bold;
+}
+#klub{
+    padding: 10px 0px 10px 0px;
+    float: left;
+    height: 60px;
+    width: 30%;
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+}
+#klub-adresa{
+    word-break: normal;
+    padding: 10px 0px 10px 0px;
+    float: left;
+    height: 60px;
+    width: 25%;
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+}
+#uci-tim{
+    padding: 10px 0px 10px 0px;
+    float: left;
+    height: 40px;
+    width: 30%;
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+
+}
+#klub-email{
+    word-break: normal;
+    padding: 10px 0px 10px 0px;
+    float: left;
+    height: 40px;
+    width: 25%;
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+}
+.document{
+    width: 100%;
+    float: left;
+}
+.document-header{
+    margin: 5px 0px 25px 0px;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+.document-1-part{
+    height: 265px;
+}
+.document-1-part-right{
+    float: right;
+    width: 30%;
+    height: 100%;
+}
+.document-1-part-left-element{
+    margin-top: 3px;
+    float: left;
+    width: 70%;
+    height: 40px;   
+}
+.document-text{
+    margin: 0px 0px 0px 0px;
+    float: left;
+    height: 100%;
+    width: 42%;
+    padding: 5px 0px 5px 4%;
+    text-align: left;
+}
+.img-korisnik{
+    height: 90%;
+    width: 90%;
+    margin: 15% 5% 15% 5%;
+    /*border-style: solid;*/
+}
+.document-2-core{
+    float: left;
+    height: auto;
+    width: 100%;
+}
+.document-2-part{
+    float: left;
+    height: auto;
+}
+.document-2-part-element-left{
+    float: left;
+    height: 100%;
+    width: 32%;
+}
+.document-2-part-element-right{
+    float: left;
+    height: 100%;
+    width: 68%;
+}
+.document-2-part-text{
+    margin: 0px 0px 0px 0px;
+    padding: 5px 5px 5px 25.20px;
+    text-align: left;
+}
+.regulations{
+    height: 100px;
+    width: 900px;
+}
+
+
+
+
