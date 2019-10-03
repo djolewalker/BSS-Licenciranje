@@ -17,6 +17,6 @@ public class bssAppMain {
         Document doc = HTMLService.getHtml();
         
         //make email notification for every new aplication
-        HTMLService.setData(doc, sheet.get(4));
+        HTMLService.setData(doc, sheet.get(3));
     }
 }
