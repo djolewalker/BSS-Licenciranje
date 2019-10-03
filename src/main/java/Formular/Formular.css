@@ -2,12 +2,12 @@
     margin-top: 20px;
     float: left;
     height: 100px;
-    width: 900px;
+    width: 100%;
 }
 .header-content{
-    padding: 10px 30px 10px 30px;
+    padding: 10px 10px 10px 35px;
     float: left;
-    width: 15%;
+    width: 90px;
 }
 .header-text{
     height: 40px;
@@ -80,15 +80,15 @@
     float: left;
 }
 .document-header{
-    margin: 5px 0px 25px 0px;
-    height: 40px;
+    margin: 5px 0px 10px 0px;
+    height: 30px;
     width: 100%;
     text-align: center;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 20px;
 }
 .document-1-part{
-    height: 265px;
+    height: 160px;
 }
 .document-1-part-right{
     float: right;
@@ -99,20 +99,20 @@
     margin-top: 3px;
     float: left;
     width: 70%;
-    height: 40px;   
+    height: auto;   
 }
 .document-text{
     margin: 0px 0px 0px 0px;
     float: left;
     height: 100%;
     width: 42%;
-    padding: 5px 0px 5px 4%;
+    padding: 5px 0px 5px 25px;
     text-align: left;
 }
 .img-korisnik{
-    height: 90%;
+    height: 140%;
     width: 90%;
-    margin: 15% 5% 15% 5%;
+    margin: 0px 0px 10px 5px;
     /*border-style: solid;*/
 }
 .document-2-core{
@@ -140,10 +140,12 @@
     text-align: left;
 }
 .regulations{
-    height: 100px;
-    width: 900px;
+    float: left;
+    width: 100%;
 }
-
+p{
+    font-size: 13px;
+}
 
 
 

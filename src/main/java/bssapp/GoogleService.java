@@ -18,11 +18,14 @@ import com.google.api.client.util.store.FileDataStoreFactory;
 import com.google.api.services.drive.Drive;
 import com.google.api.services.drive.model.File;
 import com.google.api.services.drive.model.FileList;
+import java.io.ByteArrayOutputStream;
 
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.OutputStream;
 import java.security.GeneralSecurityException;
 import java.util.Collections;
 import java.util.List;
@@ -57,8 +60,7 @@ public class GoogleService {
     //////////////////////////////////////////////////////////////////////////////
     //          GOOGLE SHEETS API - LOAD DATA FROM REGISTRATION FORM            //
     //////////////////////////////////////////////////////////////////////////////
-    public static List<List<Object>> readSheet() throws IOException, GeneralSecurityException 
-    {
+    public static List<List<Object>> readSheet() throws IOException, GeneralSecurityException {
         final NetHttpTransport HTTP_TRANSPORT = GoogleNetHttpTransport.newTrustedTransport();
         final String spreadsheetId = "1lvxmZ_iZtomuy9caFF_56G3yx5vZCZuwYDYTE_w2vHA";
         final String range = "bssRegistracija2020";
@@ -70,25 +72,18 @@ public class GoogleService {
                 .execute();
         return response.getValues();
     }
-    
-    public static List<File> getFiles() throws IOException, GeneralSecurityException{
-        final NetHttpTransport HTTP_TRANSPORT = GoogleNetHttpTransport.newTrustedTransport();
-        Drive service = new Drive.Builder(HTTP_TRANSPORT, JSON_FACTORY, getCredentials(HTTP_TRANSPORT))
-                .setApplicationName(APPLICATION_NAME)
-                .build();
-        FileList result = service.files().list()
-                .execute();
-        
-        List<File> files = result.getFiles();
-        
-        if (files == null || files.isEmpty()) {
-            System.out.println("No files found.");
-        } else {
-            System.out.println("Files:");
-            for (File file : files) {
-                System.out.printf("%s (%s)\n", file.getName(), file.getId());
-            }
+
+    public static void setUserPhoto(String fileID) throws IOException, GeneralSecurityException {
+        try {
+            final NetHttpTransport HTTP_TRANSPORT = GoogleNetHttpTransport.newTrustedTransport();
+            Drive service = new Drive.Builder(HTTP_TRANSPORT, JSON_FACTORY, getCredentials(HTTP_TRANSPORT))
+                    .setApplicationName(APPLICATION_NAME)
+                    .build();
+
+            service.files().get(fileID).executeMediaAndDownloadTo(JPEGService.getFOS());
+        } catch (Exception e) {
+            System.out.println("Setting photo to document did not success: "+e.getMessage());
         }
-        return files;
     }
+
 }
