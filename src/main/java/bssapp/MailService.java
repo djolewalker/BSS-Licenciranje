@@ -27,7 +27,7 @@ public class MailService {
 
     private static final String SMTP_SERVER = "127.0.0.1";
     private static final String USERNAME = "dimitrije";
-    private static final String PASSWORD = "";
+    private static final String PASSWORD = "dimi159951";
 
     private static final String EMAIL_FROM = "Dimitrije Zarkovic <djole.bss@as-bss.com>";
 
